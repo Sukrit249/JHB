@@ -19,7 +19,7 @@
       <div class="sidenav collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active"><a title="not working" class="nav-link" href=#>About</a></li>
-          <li class="nav-item active"><a title="not working" href="https://soundcloud.com/haro-official" class="nav-link">Soundcloud</a></li>
+          <li class="nav-item active"><a title="soundcloud link to the Artis" href="https://soundcloud.com/haro-official" class="nav-link">Soundcloud</a></li>
         </ul>
       </div>
     </nav>
