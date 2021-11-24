@@ -15,7 +15,7 @@ body {
 }
 /* styling the outer music container */
 .music-container {
-  background-color: #efefef;
+  background-color: #95c3ee;
   box-shadow: inset -1px -1px 5px rgba(33,33,33, 0.5), inset 1px 1px 5px rgba(33,33,33,0.5); 
   display: flex;
   padding: 20px 30px;
@@ -24,7 +24,6 @@ body {
   z-index: 10;
 }
 .img-container {
-  position: relative;
   width: 110px;
 }
 .img-container::after {
@@ -38,7 +37,7 @@ body {
   transform: translate(-50%, 50%);
 }
 .img-container img {
-  border-radius: 50%;
+  border-radius: 5%;
   -o-object-fit: cover;
      object-fit: cover;
   height: 110px;
@@ -55,8 +54,9 @@ body {
 }
 /* styling the navigation buttons */
 .action-btn {
+  background-color: #95c3ee;
   border: 0;
-  border-radius: 20px;
+  border-radius: 10px;
   font-size: 20px;
   cursor: pointer;
   padding: 10px;
@@ -80,11 +80,15 @@ body {
   top: 0;
   left: 20px;
   width: calc(100% - 40px);
-  padding: 10px 10px 10px 150px;
+  padding: 10px 10px 100px 78px;
   opacity: 0;
   transform: translateY(0%);
   transition: transform 0.3s ease-in, opacity 0.3s ease-in;
   z-index: 0;
+}
+#title{
+  position: absolute;
+  top: 45%;
 }
 
 .music-container.play .music-info {
@@ -126,12 +130,12 @@ body {
     background: 
         linear-gradient(90deg, 
         rgba(2,0,36,1) 0%, 
-        rgb(1, 1, 56) 5%, 
-        rgb(4, 0, 85) 15%, 
-        rgb(4, 4, 100) 25%, 
-        rgba(9,9,121,1) 35%, 
-        rgb(12, 12, 153) 55%, 
-        rgb(14, 131, 199) 100%);    
+        rgb(56, 1, 22) 5%, 
+        rgb(85, 0, 28) 15%, 
+        rgb(100, 4, 41) 25%, 
+        rgb(121, 9, 52) 35%, 
+        rgb(153, 12, 66) 55%, 
+        rgb(199, 14, 45) 100%);    
     min-height: 100vh;
     width: auto;
     display: flex;
@@ -193,6 +197,10 @@ button{
     width: 100%;
     height: 100%;
     transform: translateY(100%);
+}
+.navbar-toggler{
+    color: #f1f1f1; 
+    background-color: #f1f1f1;
 }
 
 .intro-text {

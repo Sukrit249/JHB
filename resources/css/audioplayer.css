@@ -15,7 +15,7 @@ body {
 }
 /* styling the outer music container */
 .music-container {
-  background-color: #efefef;
+  background-color: #95c3ee;
   box-shadow: inset -1px -1px 5px rgba(33,33,33, 0.5), inset 1px 1px 5px rgba(33,33,33,0.5); 
   display: flex;
   padding: 20px 30px;
@@ -24,7 +24,6 @@ body {
   z-index: 10;
 }
 .img-container {
-  position: relative;
   width: 110px;
 }
 .img-container::after {
@@ -38,7 +37,7 @@ body {
   transform: translate(-50%, 50%);
 }
 .img-container img {
-  border-radius: 50%;
+  border-radius: 5%;
   object-fit: cover;
   height: 110px;
   width: inherit;
@@ -54,8 +53,9 @@ body {
 }
 /* styling the navigation buttons */
 .action-btn {
+  background-color: #95c3ee;
   border: 0;
-  border-radius: 20px;
+  border-radius: 10px;
   font-size: 20px;
   cursor: pointer;
   padding: 10px;
@@ -79,11 +79,15 @@ body {
   top: 0;
   left: 20px;
   width: calc(100% - 40px);
-  padding: 10px 10px 10px 150px;
+  padding: 10px 10px 100px 78px;
   opacity: 0;
   transform: translateY(0%);
   transition: transform 0.3s ease-in, opacity 0.3s ease-in;
   z-index: 0;
+}
+#title{
+  position: absolute;
+  top: 45%;
 }
 
 .music-container.play .music-info {
