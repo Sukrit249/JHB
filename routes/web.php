@@ -14,11 +14,28 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
+});
+Route::get('home', function () {
+    return view('home');
 });
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth'])->name('dashboard');
+Route::get('songlist', function () {
+    return view('songlist');
+});
 
-require __DIR__.'/auth.php';
+// Route::get('upload', function () {
+//     return view('upload');
+// });
+
+// Route::get('songList', function () {
+    
+//     $songList = [
+//       ['img' => '/img/Full-Speed', 'Song' => 'music/Full-speed'],
+//       ['img' => '/img/Hydra-Stage', 'Song' => 'music/Hydra-Stage'],
+//       ['img' => '/img/Voices', 'Song' => 'music/Voices'],
+//     ];
+//     return view('songList', ['songList' => $songList]);
+// });
+
+

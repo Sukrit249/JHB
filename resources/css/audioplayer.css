@@ -1,0 +1,63 @@
+.music-container {
+  /*z-index: -1; */
+  background-color: rgb(66, 66, 66);
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 5px;
+  bottom: 0;
+}
+.img-container{
+  display: flex;
+  align-items: center;
+}
+.img-info{
+  color: white;
+  margin:  none;
+}
+.music-info{
+  background-color: rgb(66, 66, 66);
+  display: flex;
+  flex-direction: row;
+}
+.progress-container{
+  background-color: aliceblue;
+  color: aliceblue;
+}
+.progress{
+  background-color: aliceblue;
+  color: aliceblue;
+}
+#title{
+  background-color: rgb(66, 66, 66);
+  color: white;
+  display: flex;
+  font-size: 20px;
+}
+#cover{
+  display: flex;
+  height: 60px;
+  width: auto;
+  margin: 0;
+  align-items: center;
+  z-index: 1; 
+}
+.navigation{
+  display: flex;
+  background-color: rgb(66, 66, 66);
+}
+.navigation:hover{
+  color: blue;
+}
+.action-button{
+  display: flex;
+}
+ #prev, #play, #next{
+  background-color: rgb(66, 66, 66);
+  border: none;
+  border-radius: 2px;
+  margin-right: 10px;
+  margin-left: 10px;
+  background-color: transparent;
+ }
