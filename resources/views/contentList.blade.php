@@ -1,26 +1,4 @@
-@section('List')
-  <div class="cover-info-lists">
-    <ul class="music-list-entry">
-      <div class="music-list-entry">
-        <li class="music-info-entry"><img class="music-cover" src="/img/Full-Speed.jpg" alt=""></li>
-      </div>
-    </ul>
-    <ul class="music-list-entry">
-      <div class="music-list-entry">
-        <li class="music-info-entry"><img class="music-cover" src="/img/Full-Speed.jpg" alt=""></li>
-      </div>
-    </ul>
-    <ul class="music-list-entry">
-      <div class="music-list-entry">
-        <li class="music-info-entry"><img class="music-cover" src="/img/Full-Speed.jpg" alt=""></li>
-      </div>
-    </ul>
-    <ul class="music-list-entry">
-      <div class="music-list-entry">
-        <li class="music-info-entry"><img class="music-cover" src="/img/Full-Speed.jpg" alt=""></li>
-      </div>
-    </ul>
-    
+@section('List') 
 @show
 
 @section('audioPlayer')

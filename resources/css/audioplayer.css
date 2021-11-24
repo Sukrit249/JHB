@@ -1,63 +1,125 @@
-.music-container {
-  /*z-index: -1; */
-  background-color: rgb(66, 66, 66);
-  position: absolute;
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  border-radius: 5px;
-  bottom: 0;
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+* {
+  box-sizing: border-box;
 }
-.img-container{
+
+body {
+  background-image: linear-gradient(
+    0deg,
+    #8A2BE2,
+    #9370DB
+  );
+  height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
-}
-.img-info{
-  color: white;
-  margin:  none;
-}
-.music-info{
-  background-color: rgb(66, 66, 66);
-  display: flex;
-  flex-direction: row;
-}
-.progress-container{
-  background-color: aliceblue;
-  color: aliceblue;
-}
-.progress{
-  background-color: aliceblue;
-  color: aliceblue;
-}
-#title{
-  background-color: rgb(66, 66, 66);
-  color: white;
-  display: flex;
-  font-size: 20px;
-}
-#cover{
-  display: flex;
-  height: 60px;
-  width: auto;
+  justify-content: center;
+  font-family: 'Lato', sans-serif;
   margin: 0;
+}
+
+/* styling the outer music container */
+.music-container {
+  background-color: #efefef;
+  box-shadow: inset -1px -1px 5px rgba(33,33,33, 0.5), inset 1px 1px 5px rgba(33,33,33,0.5); 
+  display: flex;
+  padding: 20px 30px;
+  position: relative;
+  margin: 100px 0;
+  z-index: 10;
+}
+
+.img-container {
+  position: relative;
+  width: 110px;
+}
+
+.img-container::after {
+  content: '';
+  border-radius: 50%;
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  transform: translate(-50%, 50%);
+}
+
+
+.img-container img {
+  border-radius: 50%;
+  object-fit: cover;
+  height: 110px;
+  width: inherit;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.navigation {
+  display: flex;
   align-items: center;
-  z-index: 1; 
+  justify-content: center;
+  z-index: 1;
 }
-.navigation{
-  display: flex;
-  background-color: rgb(66, 66, 66);
+/* styling the navigation buttons */
+.action-btn {
+  border: 0;
+  border-radius: 20px;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 10px;
+  margin: 0 20px;
 }
-.navigation:hover{
-  color: blue;
+
+.action-btn.action-btn-big {
+  font-size: 30px;
+  outline: none;
 }
-.action-button{
-  display: flex;
+
+.action-btn:focus {
+  outline: 0;
 }
- #prev, #play, #next{
-  background-color: rgb(66, 66, 66);
-  border: none;
-  border-radius: 2px;
-  margin-right: 10px;
-  margin-left: 10px;
-  background-color: transparent;
- }
+
+/* styling the music-info div by placing it under the music container */
+.music-info {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 15px 15px 0 0;
+  position: absolute;
+  top: 0;
+  left: 20px;
+  width: calc(100% - 40px);
+  padding: 10px 10px 10px 150px;
+  opacity: 0;
+  transform: translateY(0%);
+  transition: transform 0.3s ease-in, opacity 0.3s ease-in;
+  z-index: 0;
+}
+
+.music-container.play .music-info {
+  opacity: 1;
+  transform: translateY(-100%);
+}
+
+.music-info h4 {
+  margin: 0;
+}
+
+/* styling the song progress container */
+.progress-container {
+  background: rgb(236, 164, 164);
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px 0;
+  height: 4px;
+  width: 100%;
+}
+
+.progress {
+  background-color: #fe8daa;
+  border-radius: 5px;
+  height: 100%;
+  width: 0%;
+  transition: width 0.1s linear;
+}
