@@ -5,11 +5,6 @@
 }
 
 body {
-  background-image: linear-gradient(
-    0deg,
-    #8A2BE2,
-    #9370DB
-  );
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -18,7 +13,6 @@ body {
   font-family: 'Lato', sans-serif;
   margin: 0;
 }
-
 /* styling the outer music container */
 .music-container {
   background-color: #efefef;
@@ -29,12 +23,10 @@ body {
   margin: 100px 0;
   z-index: 10;
 }
-
 .img-container {
   position: relative;
   width: 110px;
 }
-
 .img-container::after {
   content: '';
   border-radius: 50%;
@@ -45,8 +37,6 @@ body {
   height: 20px;
   transform: translate(-50%, 50%);
 }
-
-
 .img-container img {
   border-radius: 50%;
   -o-object-fit: cover;
@@ -55,7 +45,6 @@ body {
   width: inherit;
   position: absolute;
   bottom: 0;
-  left: 0;
 }
 
 .navigation {
@@ -85,7 +74,7 @@ body {
 
 /* styling the music-info div by placing it under the music container */
 .music-info {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(8, 8, 8, 0.5);
   border-radius: 15px 15px 0 0;
   position: absolute;
   top: 0;
@@ -124,44 +113,7 @@ body {
   width: 0%;
   transition: width 0.1s linear;
 }
-.cover-info-lists{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    position: absolute;
-    top: 30%;
-    left:30%;
-    z-index: -1;
-}
 
-.music-list-entry{
-    list-style: none;
-    height: 150px;
-    width: auto;
-}
-.music-info-entry{
-    height: 300px;
-    width: auto;
-}
-.music-cover{
-    height: 15vh;
-    width: auto;
-    margin: 50px 30px 0px 30px;
-}
-
-
-.songlist{
-    display: flex;
-}
-.songlist-entry{
-    display: flex;
-}
-.song-list-cover{
-    height: 5vh;
-    width: auto;
-    display: flex;
-}
 * {
     margin: 0;
     padding: 0;
@@ -230,21 +182,9 @@ nav {
     font-size: 1.2rem;
 }
 button{
-    color: aliceblue;
-    background-color: aliceblue;
+    color: rgb(124, 181, 231);
     z-index: 2;
 }
-.intro {
-    /*background: rgb(22, 60, 143);*/
-    /* position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;*/
-} 
 .slider {
     background: rgb(97, 105, 109);
     position: fixed;

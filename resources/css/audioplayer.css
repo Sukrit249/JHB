@@ -5,11 +5,6 @@
 }
 
 body {
-  background-image: linear-gradient(
-    0deg,
-    #8A2BE2,
-    #9370DB
-  );
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -18,7 +13,6 @@ body {
   font-family: 'Lato', sans-serif;
   margin: 0;
 }
-
 /* styling the outer music container */
 .music-container {
   background-color: #efefef;
@@ -29,12 +23,10 @@ body {
   margin: 100px 0;
   z-index: 10;
 }
-
 .img-container {
   position: relative;
   width: 110px;
 }
-
 .img-container::after {
   content: '';
   border-radius: 50%;
@@ -45,8 +37,6 @@ body {
   height: 20px;
   transform: translate(-50%, 50%);
 }
-
-
 .img-container img {
   border-radius: 50%;
   object-fit: cover;
@@ -54,7 +44,6 @@ body {
   width: inherit;
   position: absolute;
   bottom: 0;
-  left: 0;
 }
 
 .navigation {
@@ -84,7 +73,7 @@ body {
 
 /* styling the music-info div by placing it under the music container */
 .music-info {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(8, 8, 8, 0.5);
   border-radius: 15px 15px 0 0;
   position: absolute;
   top: 0;
