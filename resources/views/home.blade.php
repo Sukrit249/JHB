@@ -10,7 +10,10 @@
       <title>J.H.B @yield('title')</title>
     </head>
   <body class="body">
-    <main>
+    <div style="background:url(img/logo2.png)">
+      <img src="img/logo2.png">
+    </div>
+    <main> 
     <nav class="navbar navbar-expand-lg">
       <a class="navbar-brand" title="home" href="/home">J.H.B</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,4 +31,5 @@
 @section('footer')
   </body>
 </html>
+
 
